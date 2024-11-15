@@ -1,0 +1,106 @@
+:root{
+    --Lblue: #f0f8ff;
+    --LBlue: #c7e7ff;
+    --Nblue: #0075cd;
+    --btnB: #0793f0;
+    --btnH: #0075cd;
+    --btnA: #005ca6;
+    --Dbtn: #dfefff;
+    --TxtB: #32aefe;
+}
+@font-face {
+    font-family: 'Givonic';
+    src: url(./Givonic-Regular.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Givonic;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 20px;
+    background-color: var(--Lblue);
+}
+.container{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    height: 320px;
+    width: 300px;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:  var(--LBlue);
+}
+.container > .inps > input{
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+    outline: 0;
+    border-radius: 3px;
+    border: 1px solid;
+}
+.inps > input[type="number"]{
+    padding: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #06294b;
+
+}
+.inps > button{
+    height: 40px;
+    width: 235px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--btnB);
+    font-size: 15px;
+    font-weight: bold;
+}
+.inps > button:hover{
+    background-color: var(--btnH);
+}
+.inps > button:active{
+    background-color: var(--btnA);
+}
+.output{
+    display:  none;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.graph{
+    height: 320px;
+    width:  300px;
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+}
+.graph > p{
+    font-weight: bold;
+}
+@media (width <= 600px) or (orientation: portrait){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .graph{
+        margin-left: 10px;
+    }
+    
+}

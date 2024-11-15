@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qvis BMI</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    
+
+
+<div class="container">
+    <div class="inps">
+        <p>Age</p>
+        <input type="number" id="age"><br>
+        <p>Height in Inches</p>
+        <input type="number" id="height"><br>
+        <p>Weight in kg</p>
+        <input type="number" id="weight"> 
+        <button onclick="Out()" id="btn">Check BMI</button>
+    <div class="output" id="outp">
+        <p>BMI:</p><p id="bmi"></p>
+        <p>Result:</p><p id="ovr"></p>
+    </div>
+    </div>
+<div class="graph" id="graph1">
+    <p>Graph Representation</p>
+    <canvas id="grph">
+
+    </canvas>
+    
+</div>
+</div>
+
+<script src="backend.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" charset="utf-8"></script>
+
+</body>
+</html>
